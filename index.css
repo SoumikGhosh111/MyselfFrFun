@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+body{ 
+    background: linear-gradient(to bottom, hsl(0, 69%, 5%), hsl(0, 20%, 20%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    width: 100vw;
+    height: 100vh;
+    
+}
+.main-frame{ 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #2d5353; */
+    /* background-color: #136c6c; */
+    /* background-color: #008080; */
+    /* background-color: #99ffff; */
+    background: linear-gradient(to right, #009999,#99ffff);
+    border-radius: 10px;
+    margin: 20px;
+}
+.image{ 
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 5px;
+    /* background-color: hsl(0, 0%, 20%); */
+    background: linear-gradient(to right,#3466cb, #66ccac);
+    border: none;
+}
+.image img{ 
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.image img:hover{ 
+    width: 160px;
+    height: 230px;
+   
+}
+.image:hover{ 
+    background: linear-gradient(to left,#3466cb, #66ccac);
+}
+.body-element{ 
+    /* color: hsl(0, 100%, 100%); */
+    color: hsl(0, 69%, 5%); 
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    /* color: blue; */
+}
+.body-element-heading{ 
+    /* font-size: 20px; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 20px;
+}
+.body-element-social-media{ 
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.body-element-social-media a{ 
+    text-decoration: none;
+    /* color: white; */
+    color: hsl(0, 69%, 5%); 
+}
+.facebook{ 
+    display: flex;
+}
+.facebook a{ 
+    transition: 0.3s ease-in-out;
+}
+.facebook a:hover{ 
+    color: #295396;
+    /* -webkit-text-stroke: 0.01px white; */
+}
+.instagram{ 
+    display: flex;
+}
+.instagram a{ 
+    transition: 0.3s ease-in-out;
+}
+.instagram a:hover{ 
+    color:  #d92e6f;
+    /* -webkit-text-stroke: 0.01px white; */
+}
+.gmail{ 
+display: flex;
+}
+.gmail a{ 
+    transition: 0.3s ease-in-out;
+}
+.gmail a:hover{ 
+    color: #de5f53;
+    /* -webkit-text-stroke: 0.01px white; */
+    
+}
+.whatsapp{ 
+    display: flex;
+}
+.whatsapp a{ 
+    transition: 0.3s ease-in-out;
+}
+.whatsapp a:hover{ 
+    color: #1a9910;
+    /* -webkit-text-stroke: 0.01px white; */
+}
+.body-element-mySelf{ 
+    text-align: justify;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+button{ 
+    border: none;
+    background: linear-gradient(to right, #3466cb, #66ccac);
+    border-radius: 24px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #3466cb;
+    transition: all .5s ease;
+}
+button:hover{ 
+    color: white;
+    background: linear-gradient(to left,#3466cb, #66ccac);
+}
+/* @media screen and(max-width: 320px){ 
+    .body-element{ 
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+} */
