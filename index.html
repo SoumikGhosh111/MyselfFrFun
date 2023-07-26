@@ -27,17 +27,26 @@
                 <div class="facebook"><img style="width: 23px;height: 23px;margin-right: 4px;" src="pngegg.png" alt=""><a href="https://www.facebook.com/profile.php?id=100010224462223" >FaceBook</a></div>
                 <div class="instagram"><img style="width: 20px;height: 20px;margin-right: 4px;" src="pngegg (1).png" alt=""><a href="https://www.instagram.com/sanjughosh0_0/">Instagram</a></div>
                 <div class="gmail"><img style="width: 20px;height: 20px;margin-right: 4px;" src="pngegg (3).png" alt=""><a href="mailto: soumikbuie2001@gmail.com">Gmail</a></div>
-                <div class="whatsapp"><img style="width: 20px;height: 20px;margin-right: 4px;" src="pngegg (2).png" alt=""><a href="tel: 7001446037">WhatsApp: 7001446037</a></div>
+                <div class="whatsapp"><img style="width: 20px;height: 20px;margin-right: 4px;" src="pngegg (2).png" alt=""><a href="tel: 7001446037">WhatsApp</a></div>
             </div>
             
-            <div class="body-element-mySelf" id="textField" style="display: none;"><p>My self Soumik Ghosh, I belong to the Bengali Comunity. My Birth Place, West Bengal, Bankura. I am a B.Tech graduate with Computer Science Major. I am a pretty fun guy to talk with. My favorite hobbies are to make Static websitesnlike this for fun. I am currently compeating for a job and want to start my carrier in tech industry and have a corporate life. Basically I am compeating for a 9 - 5 job. Other than that my favorite food is Biriyani, Man I love Biriyani, and also I am found of travelling with both my family and friends.</p></div>
+            <div class="body-element-mySelf" id="textField" style="display: none;"><p>My self Soumik Ghosh, I belong to the Bengali Comunity. My Birth Place, West Bengal, Bankura. I am a B.Tech graduate with Computer Science Major. I am a pretty fun guy to talk with. My favorite hobbies are to make Static websites like this for fun. I am currently compeating for a job and want to start my carrier in tech industry and have a corporate life. Basically I am compeating for a 9 - 5 job. Other than that my favorite food is Biriyani, Man I love Biriyani, and also I am found of travelling with both my family and friends.</p></div>
+            <button onclick="displayText(this)">See Full</button>
             <script>
-                function displayText() {
-                 var text = document.getElementById("textField");
-                 text.style.display = "block";
+                var text = document.getElementById("textField");
+                let display = true; 
+                function displayText(event) {
+                    if(display){ 
+                        text.style.display = 'block';
+                        event.innerHTML = 'See Less';
+                        display = false; 
+                    }else if(display == false){ 
+                        text.style.display = 'none';
+                        event.innerHTML = 'See Full';
+                        display = true; 
+                    }
                 }
                 </script>
-            <button type="submit" id="bttn" onclick="displayText()">See Full</button>
         </div>
    </div>
 </body>
